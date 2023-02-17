@@ -14,5 +14,3 @@ putchar(ch);
 }
 return (0);
 }
-    
-  
