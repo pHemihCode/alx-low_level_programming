@@ -14,17 +14,17 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
-if(n>0)
+if (n>0)
 {
-  printf("is positive %d\n",n);
+  printf("%d is positive %d\n", n);
 }
- else if(n==0)
+else if (n==0)
 {
-  printf("is zero %d\n",n);
+printf("%d is zero %d\n", n);
 }
- else
+else
 {
-  printf("is negative %d\n",n);
+printf("%d is negative %d\n", n);
 }
 return (0);
 }
