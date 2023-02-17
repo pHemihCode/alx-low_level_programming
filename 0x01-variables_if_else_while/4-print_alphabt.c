@@ -9,11 +9,11 @@ int main(void)
 char ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-if(ch == 'e')
+if (ch == 'e')
 {
 continue;
 }
-else if(ch == 'q')
+else if (ch == 'q')
 {
 continue;
 }
