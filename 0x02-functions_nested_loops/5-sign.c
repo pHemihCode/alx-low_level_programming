@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*print_sign - Check the code 
+*print_sign - Check the code
 *@n: is n an alphabet
 *
 *Return: Always 0 (Success)
