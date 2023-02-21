@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_abs - returns absolute value of an int
+*print_last_digit - check last digit
 *@n: integer
 *Return: value for the last digit
 */
