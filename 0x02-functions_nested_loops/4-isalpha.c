@@ -1,16 +1,16 @@
 #include "main.h"
 /**
 *_isalpha - Checking alpha code
-*
+*@c: is c an integer
 *Return: Always 0 (Success)
 */
-int _isalpha (int c)
+int _isalpha(int c)
 {
 if (c >= 65 && c <= 90)
 {
 return (1);
 }
-else if(c >= 97 && c <= 122)
+else if (c >= 97 && c <= 122)
 {
 return (1);
 }
