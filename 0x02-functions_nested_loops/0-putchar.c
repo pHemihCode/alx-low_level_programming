@@ -6,7 +6,8 @@
 */
 int main(void)
 {
+FILE *myfile;
 printf("_putchar\n");
-fprintf(stderr, "\n");
+fprintf(myfile, "[Anything]");
 return (0);
 }
