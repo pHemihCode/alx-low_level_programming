@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - Entry level 
+*main - Entry level
 *
 *Return: Always 0 (Success)
 */
