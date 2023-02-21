@@ -6,9 +6,11 @@
 */
 void print_alphabet(void)
 {
-for (char i = 'a'; i <= 'z'; i++)
+char i = 'a';
+while(i <= 'z')
 {
 _putchar(i);
+i++;
 }
- _putchar('\n');
+_putchar('\n');
 }
