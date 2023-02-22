@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - prints sum of all multiples 
+*main - prints sum of all multiples
 *@void: void
 *Return: Always 0
 */
