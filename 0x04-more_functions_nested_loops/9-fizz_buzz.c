@@ -8,8 +8,8 @@
 */
 int main(void)
 {
-int a;
-for (a = 1; a <= 100; a++)
+int a = 1;
+while (a <= 100)
 {
 if (a % 3 == 0 && a % 5 == 0)
 {
@@ -31,6 +31,7 @@ if (a != 100)
 {
 printf(" ");
 }
+a++;
 }
 printf("\n");
 return (0);
