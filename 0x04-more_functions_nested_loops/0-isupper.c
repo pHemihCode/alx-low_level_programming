@@ -3,8 +3,7 @@
 
 /**
 *_isupper - Initiating function
-*@c: variable of upper or lower case 
-*
+*@c: variable of upper or lower case
 *Return: Always 0
 */
 
