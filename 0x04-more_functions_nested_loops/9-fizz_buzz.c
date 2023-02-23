@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*main - Entry point
+*main - Fizz for multiples of 3 and 5
+*
+*
 *Return: Always 0
 */
 int main(void)
