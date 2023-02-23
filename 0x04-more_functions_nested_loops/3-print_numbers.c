@@ -3,7 +3,7 @@
 
 /**
 *print_numbers - It prints the function
-*@n: Integer
+*
 *Return: Always 0
 */
 void print_numbers(void)
