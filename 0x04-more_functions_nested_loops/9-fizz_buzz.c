@@ -3,7 +3,8 @@
 /**
 *main - Entry point
 *
-*Return: always 0
+*
+*Return: Always 0
 */
 int main(void)
 {
@@ -24,7 +25,7 @@ printf("%s", "Buzz");
 }
 else
 {
-printf("%d ",a);
+printf("%d",a);
 }
 if (a != 100)
 {
