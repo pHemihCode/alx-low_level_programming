@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-*_isdigit: The function
-*@c : Variable
+*_isdigit - The function
+*@c: Variable
 *Return: Always 0
 */
 int _isdigit(int c)
