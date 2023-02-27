@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  *swap_int - Function that swaps the numbers
+ *@a: First number
+ *@b: Second number
  *@c: The third number
  *Return: Alwways o
  */
