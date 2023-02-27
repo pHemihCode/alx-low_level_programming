@@ -3,21 +3,17 @@
 #include <string.h>
 /**
  *rev_string - The function
- *@a: First variable
- *@b: Second variable
- *@c: Third variable
+ *@s: String
  *Return: 0
  */
 void rev_string(char *s)
 {
-int a,b,c;
+int a, b, c;
 b = strlen(s);
-for (a = 0; a < b/2; a++)
+for (a = 0; a < b / 2; a++)
 {
 c = s[a];
 s[a] = s[b - a - 1];
 s[b - a - 1] = c;
 }
 }
-      
-  
