@@ -1,0 +1,13 @@
+#include "main.h"
+#include <string.h>
+/**
+ *print_rev - Prints in reverse order
+ *Return: 0
+ */
+void print_rev(char *s)
+{
+char str;
+s[50];
+str = strrev(s);
+_putchar(str);
+}
