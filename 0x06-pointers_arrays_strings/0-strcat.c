@@ -3,15 +3,19 @@
 #include <string.h>
 /**
  *_strcat - The function that concatenates dest amd src
- *@dest: The first pointer as parameter
- *@src: The second pointer as parameter
+ *@dest: destination
+ *@src: source
+ *Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-int Length1 = strlen(dest);
-int Length2 = strlen(src);
-for (int i = 0; i <= Length2; i++)
+int i,j;
+for (i = 0; dest[i] != '\0'; i++)
 {
-dest[Length2 + 1] = src[i];
 }
+for (j = 0; src[j] != '\0'; j++,i++)
+{
+dest[i] = src[j];
+}
+dest[i] = '\0';
 }
