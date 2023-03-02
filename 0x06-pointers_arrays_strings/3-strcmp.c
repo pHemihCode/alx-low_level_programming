@@ -4,6 +4,8 @@
  *_strcmp - Compares strings
  *@s1: destination string
  *@s2: Source string
+ *@flag: Flag if they are the same
+ *@i: for loop
  *Return: 0
  */
 int _strcmp(char *s1, char *s2)
