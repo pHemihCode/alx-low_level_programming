@@ -1,4 +1,8 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 /**
  * rot13 - Encodes a string using rot13.
  * @s: An input string 
@@ -6,18 +10,30 @@
  */
 char *rot13(char *s)
 {
-int i = 0;
-while (s[i] != '\0')
+if (s == NULL)
 {
-while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+return NULL;
+}
+
+char* result = malloc(strlen(s));
+
+if (result != NULL)
 {
-if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
-s[i] += 13;
+strcpy(result, s);
+char* current_char = result;
+
+while (*current_char != '\0'){
+if ((*current_char >= 97 && *current_char <= 122) || (*current_char >= 65 && *current_char <= 90)){
+if (*current_char > 109 || (*current_char > 77 && *current_char < 91)){
+*current_char -= 13;
+}
 else
-s[i] -= 13;
-i++;
+{
+*current_char += 13;
 }
-i++;
 }
-return (s);
+current_char++;
+}
+}
+return result;
 }
