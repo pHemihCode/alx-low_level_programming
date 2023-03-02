@@ -1,0 +1,19 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *reverse_array - Reverse an array of integer
+ *@a: an array of integers
+ *@n: the number of lements in the array
+ *Return: void
+ */
+void reverse_array(int *a, int n)
+{
+a[n];
+int ch;
+for (int i = 0; i < n/2; i++)
+{
+ch = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = ch;
+}
+}
