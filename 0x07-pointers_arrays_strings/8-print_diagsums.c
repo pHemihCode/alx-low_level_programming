@@ -16,5 +16,5 @@ for (i = 0; i < size; i++)
 Rowsum += a[(size * i) + i];
 Columnsum += a[(size * (i + 1)) - (i + 1)];
 }
-printf("%d %d", Rowsum,Columnsum);
+printf("%d %d\n", Rowsum,Columnsum);
 }
