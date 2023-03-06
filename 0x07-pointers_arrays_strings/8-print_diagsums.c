@@ -4,12 +4,13 @@
  *print_diagsums - A function that prints
  *@a: The pointer to an array
  *@size: The size of the array
- *Return: Void
  */
 void print_diagsums(int *a, int size)
 {
 int i;
 unsigned int Rowsum, Columnsum;
+Rowsum = 0;
+Columnsum = 0;
 for (i = 0; i < size; i++)
 {
 Rowsum += a[(size * i) + i];
