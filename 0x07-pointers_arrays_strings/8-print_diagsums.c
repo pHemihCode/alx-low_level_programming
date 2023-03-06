@@ -9,7 +9,7 @@
 void print_diagsums(int *a, int size)
 {
 int i;
-int Rowsum, Columnsum;
+unsigned int Rowsum, Columnsum;
 for (i = 0; i < size; i++)
 {
 Rowsum += a[(size * i) + i];
