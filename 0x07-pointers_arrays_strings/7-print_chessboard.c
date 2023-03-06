@@ -4,7 +4,7 @@
  *@a: 2D array to print
  *Return: void
  */
-void print_cheaaboard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 int i, j;
 for (i = 0; i < 8; i++)
