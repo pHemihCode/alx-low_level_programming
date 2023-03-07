@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_strpbrk - function that locates the first occurence in the string
  *@s: The string
@@ -7,17 +8,17 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-char *thestring = s;
-while (*thestring != '\0')
+int i, j;
+for (i = 0; *s != '\0'; i++)
 {
-char * thebytes = accept;
-while (*thebytes != '\0')
+for (j = 0; accept[j] != '\0'; j++)
 {
-if (*thestring == *thebytes)
+if (*s == accept[j])
 {
-return thestring;
+return (s);
+}
+s++;
+}
+return (NULL);
 }
 }
-}
-}
-	  
