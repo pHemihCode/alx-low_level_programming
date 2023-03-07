@@ -17,8 +17,8 @@ if (*s == accept[j])
 {
 return (s);
 }
+}
 s++;
 }
 return (NULL);
-}
 }
