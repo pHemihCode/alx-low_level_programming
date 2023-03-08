@@ -1,4 +1,3 @@
-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
 #include "main.h"
 /**
  *_strlen_recursion - The function
