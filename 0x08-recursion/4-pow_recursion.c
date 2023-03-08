@@ -18,7 +18,7 @@ return (1);
 else if (y % 2 == 0)
 {
 int result = _pow_recursion(x, y / 2);
-return result * result;
+ return (result * result);
 }
 else
 {
