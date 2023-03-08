@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *is_prime_number - the function 
+ *is_prime_number - the function
  *@n: The integer
  *Return: Integer
  */
