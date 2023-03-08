@@ -1,3 +1,4 @@
+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
 #include "main.h"
 /**
  *_strlen_recursion - The function
@@ -6,7 +7,7 @@
  */
 int _strlen_recursion(char *s)
 {
-if(*s == '\0')
+if (*s == '\0')
 {
 return (0);
 }
