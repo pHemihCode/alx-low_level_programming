@@ -18,6 +18,7 @@ return (1);
 int a = atoi(argv[1]);
 int b = atoi(argv[2]);
 int mult = a * b;
-printf("%d\n", mult);
+printf("%d", mult);
+printf("\n");
 return (0);
 }
