@@ -45,9 +45,10 @@ printf("Error");
 printf("\n");
 return (1);
 }
-int num1 = _atoi(argv[1]);
-int num2 = _atoi(argv[2]);
-int result = num1 * num2;
+int num1, num2, result;
+num1 = _atoi(argv[1]);
+num2 = _atoi(argv[2]);
+result = num1 * num2;
 printf("%d\n", result);
 return (0);
 }
