@@ -38,8 +38,8 @@ return (num);
  */
  int main(int argc, char *argv[])
  {
-   int num1 = _atoi(argv[1]);
-   int num2 = _atoi(argv[2]);
+   int num1 = _atoi(argv[i]);
+   int num2 = _atoi(argv[i] + 1);
    int result;
    result = num1 + num2;
    if (argv[1] == null && argv[2] == null)

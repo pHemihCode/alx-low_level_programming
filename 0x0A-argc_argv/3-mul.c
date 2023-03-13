@@ -39,16 +39,16 @@ return sign * res;
  */
 int main(int argc, char *argv[])
 {
+int a, b, result;
 if (argc != 3)
 {
 printf("Error");
 printf("\n");
 return (1);
 }
-int num1, num2, result;
-num1 = _atoi(argv[1]);
-num2 = _atoi(argv[2]);
-result = num1 * num2;
+a = _atoi(argv[1]);
+b = _atoi(argv[2]);
+result = a * b;
 printf("%d\n", result);
 return (0);
 }
