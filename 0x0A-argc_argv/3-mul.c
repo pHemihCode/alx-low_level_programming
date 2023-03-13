@@ -1,5 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
+/**
+ * _atoi - convert a string into an integer.
+ *
+ * @s: the string to use.
+ *
+ * Return: integer.
+ */
+
+int _atoi(char *s)
+{
+  int sign = 1, i = 0;
+  unsigned int res = 0;
+  while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+    {
+      if (s[i] == '-')
+	sign *= -1;
+      i++;
+    }
+  while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+    {
+      res = (res * 10) + (s[i] - '0');
+      i++;
+    }
+  res *= sign;
+  return (res);
+}
 /**
  *main - The entry point
  *@argc: Counter
@@ -16,10 +41,9 @@ printf("Error");
 printf("\n");
 return (1);
 }
-int a = atoi(argv[1]);
-int b = atoi(argv[2]);
-int mult = a * b;
-printf("%d", mult);
-printf("\n");
+int num1 = _atoi(argv[1]);
+int num2 = _atoi(argv[2]);
+int result = num1 * num2;
+printf("%d\n", result);
 return (0);
 }
