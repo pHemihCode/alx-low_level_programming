@@ -32,9 +32,6 @@ return sign * res;
  *main - The entry point
  *@argc: Counter
  *@argv: Array
- *@a: Holds the first number as integer
- *@b: Holds the second number as integer
- *@result: Hold the logic
  *Return: Integer
  */
 int main(int argc, char *argv[])
