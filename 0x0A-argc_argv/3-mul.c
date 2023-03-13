@@ -2,9 +2,8 @@
 #include "main.h"
 /**
  * _atoi - convert a string into an integer.
- *
- * @s: the string to use.
- *
+ *@s: the string to use.
+ *@res: The result
  * Return: integer.
  */
 int _atoi(char *s)
@@ -35,6 +34,7 @@ return sign * res;
  *@argv: Array
  *@a: Holds the first number as integer
  *@b: Holds the second number as integer
+ *@result: Hold the logic
  *Return: Integer
  */
 int main(int argc, char *argv[])
