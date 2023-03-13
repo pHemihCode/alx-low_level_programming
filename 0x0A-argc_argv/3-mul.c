@@ -31,15 +31,14 @@ return sign * res;
  *main - The entry point
  *@argc: Counter
  *@argv: Array
- *Return: Integer
+ *Return: 0
  */
 int main(int argc, char *argv[])
 {
 int a, b, result;
 if (argc != 3)
 {
-printf("Error");
-printf("\n");
+printf("Error\n");
 return (1);
 }
 a = _atoi(argv[1]);
