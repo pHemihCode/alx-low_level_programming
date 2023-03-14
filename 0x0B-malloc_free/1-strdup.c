@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strdup - The function that duplicates 
+ *_strdup - The function that duplicates
  *@str: Pointer to a array of string
  *Return: Pointer or NULL
  */
@@ -13,7 +13,7 @@ int n;
 char *ptr;
 if (str == NULL)
 {
-return NULL;
+return (NULL);
 }
 n = strlen(str);
 ptr = (char *)malloc(n + 1);
