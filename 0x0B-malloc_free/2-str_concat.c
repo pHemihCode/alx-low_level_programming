@@ -24,9 +24,6 @@ j++;
 i++;
 }
 s1[i] = '\0';
-ptr = (char *)malloc(sizeof(s1) * (i + 1));
-if (ptr == NULL)
-return ('\0');
-else
+ptr = (char *)malloc(sizeof(s1));
 return (ptr);
 }
