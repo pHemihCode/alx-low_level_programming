@@ -25,5 +25,10 @@ i++;
 }
 s1[i] = '\0';
 ptr = malloc(sizeof(char) * (i + j + 1));
+if (ptr == NULL)
+{
+free(ptr);
+return (NULL);
+}
 return (ptr);
 }
