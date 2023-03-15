@@ -14,7 +14,7 @@ int i = 0, j = 0;
 if (s1 == NULL)
 return ("");
 if (s2 == NULL)
-return ("");     
+return ("");
 while (s1[i] != '\0')
 i++;
 while (s2[j] != '\0')
@@ -24,6 +24,6 @@ j++;
 i++;
 }
 s1[i] = '\0';
-ptr = malloc(sizeof(char) + (i + j + 1));
+ptr = malloc(sizeof(char) * (i + j + 1));
 return (ptr);
 }
