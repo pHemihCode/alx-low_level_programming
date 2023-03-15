@@ -28,7 +28,7 @@ if (ptr == NULL)
 return (NULL);
 
 for (i = 0; s1[i]; i++)
-ptr[a] = s1[i];
+ptr[a++] = s1[i];
 for (i = 0; s2[i]; i++)
 ptr[a++] = s2[i];
 
