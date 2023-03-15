@@ -24,6 +24,6 @@ j++;
 i++;
 }
 s1[i] = '\0';
-ptr = (char *)malloc(sizeof(s1));
+ptr = malloc(sizeof(char) + (i + j + 1));
 return (ptr);
 }
