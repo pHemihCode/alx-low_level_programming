@@ -2,9 +2,6 @@
 #include <stdlib.h>
 /**
  *argstostr - a function that concatenates
- *@ac: count of arguments passed to function
- *@av:array of arguments
- *
  *Return: pointer or NULL
  */
 int len(char *str);
