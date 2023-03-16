@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *malloc_checked - The function that allocates memory
- *@b: The number of intergers 
+ *@b: The number of intergers
  *Return: void
  */
 void *malloc_checked(unsigned int b)
