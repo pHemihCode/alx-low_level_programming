@@ -19,7 +19,7 @@ return (NULL);
 }
 for (i = 0; i < (nmemb * size); i++)
 {
-*((char *)(ptr) + 1) = 0;
+*((char *)(ptr) + i) = 0;
 }
 return (ptr);
 }
