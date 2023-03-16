@@ -2,6 +2,7 @@
 #include <stdlib.h>
 /**
  *argstostr - a function that concatenates
+ *@str: String
  *Return: pointer or NULL
  */
 int len(char *str);
