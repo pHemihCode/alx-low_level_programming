@@ -14,14 +14,14 @@ char *ptr;
 unsigned int len1, len2;
 if (s1 == NULL || s2 == NULL)
 return ("");
-len1 = strlen(s1);
+len1 = strlen(s1) + n + 1;
 len2 = strlen(s2);
 if (n >= len2)
 {
 n = len2;
 }
 strncat(s1, s2, n);
-ptr = malloc(sizeof(char) + len1 + n + 1);
+ptr = malloc(sizeof(char) + len1);
 if (ptr == NULL)
 return (NULL);
 return (ptr);
