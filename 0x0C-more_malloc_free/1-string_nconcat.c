@@ -20,9 +20,9 @@ if (n >= len2)
 {
 n = len2;
 }
-strncat(s1, s2, n);
 ptr = malloc(sizeof(char) + len1);
 if (ptr == NULL)
 return (NULL);
+strncat(s1, s2, n);
 return (ptr);
 }
