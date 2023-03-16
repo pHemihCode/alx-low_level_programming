@@ -11,16 +11,16 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-unsigned int len1, len2;
+ unsigned int len1, len2, num = n;
 if (s1 == NULL || s2 == NULL)
 return ("");
-len1 = strlen(s1) + n + 1;
+len1 = strlen(s1) + num + 1;
 len2 = strlen(s2);
-if (n >= len2)
+if (num >= len2)
 {
-n = len2;
+num = len2;
 }
-ptr = malloc(sizeof(s1) + len1);
+ptr = malloc(sizeof(*ptr) + len1);
 if (ptr == NULL)
 return (NULL);
 strncat(s1, s2, n);
