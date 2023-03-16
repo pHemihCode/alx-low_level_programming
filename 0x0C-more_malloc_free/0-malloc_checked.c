@@ -8,14 +8,9 @@
  */
 void *malloc_checked(unsigned int b)
 {
-  int *ptr;
-  ptr = (int *)malloc(b * sizeof(int));
-  if (!ptr)
-    {
-      printf("98\n");
-    }
-  if (ptr == NULL)
-    return (NULL);
-  free(ptr);
-  return (ptr);
+void *ptr;
+ptr = malloc(b);
+if (ptr == NULL)
+exit (98);
+return (ptr);
 }
