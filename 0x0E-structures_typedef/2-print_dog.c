@@ -12,5 +12,5 @@ if (d -> name == NULL)
 d -> name = "(nil)";
 if (d -> owner == NULL)
 d -> owner = "(nil)";
-printf("%s\n %s\n",d -> name, d -> owner);
+printf("%s\n %f %s\n", d -> name, d -> age, d -> owner);
 }
