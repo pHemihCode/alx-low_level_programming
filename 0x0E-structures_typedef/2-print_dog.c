@@ -2,7 +2,7 @@
 #include "dog.h"
 /**
  *print_dog - the function that prints member of the struct
- *@d: poiner
+ *@d: pointer
  */
 void print_dog(struct dog *d)
 {
