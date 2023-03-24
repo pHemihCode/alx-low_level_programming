@@ -1,30 +1,47 @@
 #include "variadic_functions.h"
 /**
- *print_strings - function that prints strings.
- *@separator: string to be printed
- *@n: number of strings passed to the function.
- *Return: no return.
+ *print_all - functiona that print all
+ *@format: format
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_all(const char * const format, ...)
 {
-va_list valist;
-unsigned int i;
-char *str;
-
-va_start(valist, n);
-
-for (i = 0; i < n; i++)
+va_list list;
+unsigned int j = 0, start = 0;
+char *p;
+va_start(list, format);
+while (format && format[j] != '\0')
 {
-str = va_arg(valist, char *);
-
-if (str)
-printf("%s", str);
-else
-printf("(nil)");
-if (i < n - 1)
-if (separator)
-printf("%s", separator);
+switch (format[j])
+{ case 'c':
+switch (start)
+{ case 1: printf(", "); }
+start = 1;
+printf("%c", va_arg(list, int));
+break;
+case 'i':
+switch (start)
+{ case 1: printf(", "); }
+start = 1;
+printf("%i", va_arg(list, int));
+break;
+case 'f':
+switch (start)
+{ case 1: printf(", "); }
+start = 1;
+printf("%f", va_arg(list, double));
+break;
+case's':
+switch (start)
+{ case 1: printf(", "); }
+start = 1;
+p = va_arg(list, char*);
+if (p)
+{ printf("%s", p);
+break; }
+printf("%p", p);
+break; }
+j++;
 }
 printf("\n");
-va_end(valist);
+va_end(list);
 }
