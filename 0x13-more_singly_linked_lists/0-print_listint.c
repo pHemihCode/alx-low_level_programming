@@ -3,19 +3,17 @@
 /**
  *print_listint - prints elements
  *@h: pointer
- *Return: Integer
+ *Return: The number of nodes
  */
 
 size_t print_listint(const listint_t *h)
 {
-const listint_t *temp;
-unsigned int counter = 0;
-temp = h;
-while (temp)
+size_t nodes = 0;
+while (h)
 {
-printf("%d\n", temp -> n);
-counter++;
-temp = temp -> link;
+nodes++;
+printf("%d\n", h -> n);
+h = h->link;
 }
-return (counter);
+return (nodes);
 }
