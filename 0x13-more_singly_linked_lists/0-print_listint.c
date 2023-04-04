@@ -8,12 +8,12 @@
 
 size_t print_listint(const listint_t *h)
 {
-size_t thenodes = 0;
-while (h)
+size_t counter = 0;
+while (h != NULL)
 {
-thenodes++;
 printf("%d\n", h -> n);
 h = h->link;
+ counter++;
 }
-return (thenodes);
+return (counter);
 }
