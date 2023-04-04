@@ -13,7 +13,7 @@ while (h != NULL)
 {
 printf("%d\n", h -> n);
 h = h->link;
- counter++;
+counter++;
 }
 return (counter);
 }

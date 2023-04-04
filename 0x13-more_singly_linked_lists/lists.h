@@ -2,7 +2,7 @@
 #define LIST_H
 #include <stdio.h>
 #include <string.h>
-
+#include <stddef.h>
 typedef struct listint_s
 {
 int n;
