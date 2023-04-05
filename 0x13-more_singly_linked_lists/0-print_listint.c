@@ -12,7 +12,7 @@ size_t counter = 0;
 while (h != NULL)
 {
 printf("%d\n", h -> n);
-h = h->link;
+h = h->next;
 counter++;
 }
 return (counter);
